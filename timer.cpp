@@ -51,12 +51,12 @@ void loop() {
     // START
     if (digitalRead(startButton) == LOW) {
       isCountingDown = true;
-      remainingTime = countdownTime; // Set the remaining time
+      remainingTime = countdownTime;
       lcd.clear();
       lcd.print("Countdown:");
       lcd.setCursor(0, 1);
       displayTime(remainingTime);
-      delay(200); // Debounce delay
+      delay(200);
     }
 
   } else {
